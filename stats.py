@@ -13,4 +13,4 @@ def count_characters(file_contents):
                 characters[l] = 1
     sorted_characters = dict(sorted(characters.items(), key=lambda item: item[1], reverse=True))
     for c in sorted_characters:
-        print(f"The '{c}' character was found {sorted_characters[c]} times")
+        print(f"'{c}: {sorted_characters[c]}'")
